@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Личный проект "Седона" - Каталог</title>
+    <link href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -20,7 +21,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостинницы</a>
+            <a class="navigation-link navigation-link-curent" href="catalog.html">Гостинницы</a>
           </li>
         </ul>
       </nav>
@@ -104,13 +105,13 @@
       </header>
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
-        <b class="sort-title uppercase"></b>
+        <p class="sort-title">Найдено гостиниц: 38</p>
         <select class="sort-control">
           <option value="chip">Сначала дешёвые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button button-light" href="#">
+        <a class="button button-light active" href="#">
           <span class="visually-hidden">Показать карточками</span>
         </a>
         <a class="button button-light" href="#">
@@ -133,6 +134,7 @@
             <p class="product-description">От 4000 ₽</p>
             <a class="button about-product-button" href="#">подробнее</a>
             <a class="button chosen-button" href="#">В избранное</a>
+            <p class="product-rate">Рейтинг: 8,5</p>
           </li>
           <li class="products-card">
             <a class="product-card-link">
@@ -143,6 +145,7 @@
             <p class="product-description">От 3000 ₽</p>
             <a class="button about-product-button" href="#">подробнее</a>
             <a class="button chosen-button" href="#">В избранное</a>
+            <p class="product-rate">Рейтинг: 8,9</p>
           </li>
           <li class="products-card">
             <a class="product-card-link">
@@ -153,6 +156,7 @@
             <p class="product-description">От 2000 ₽</p>
             <a class="button about-product-button" href="#">подробнее</a>
             <a class="button chosen-button" href="#">В избранное</a>
+            <p class="product-rate">Рейтинг: 9,2</p>
           </li>
           <li class="products-card">
             <a class="product-card-link">
@@ -163,27 +167,28 @@
             <p class="product-description">От 3000 ₽</p>
             <a class="button about-product-button" href="#">подробнее</a>
             <a class="button chosen-button" href="#">В избранное</a>
+            <p class="product-rate">Рейтинг: 9,2</p>
           </li>
         </ul>
         <button class="button more-products-button" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-curent">1</a>
+            <a class="button pagination-button pagination-curent">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="button pagination-button" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="button pagination-button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="button pagination-button" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="button pagination-button" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="button pagination-button" href="#">10</a>
           </li>
         </ul>
         <p class="product-description">Гостиниц на странице:</p>
@@ -197,7 +202,7 @@
     </main>
     <section class="distribution distribution-catalog">
       <h2 class="distribution-title">Подпишитесь на рассылку</h2>
-      <p class="distribution-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="distribution-description ">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="distribution-letter">E-mail</label>
         <input class="distribution-letter" id="distribution-letter" placeholder="Ваш e-mail" type="email" required>
@@ -210,17 +215,17 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="media-list">
           <li class="media-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <a class="media-logo" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
-            <li class="media-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
+          <li class="media-item">
+            <a class="media-logo" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="media-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a class="media-logo" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
