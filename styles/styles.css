@@ -30,21 +30,57 @@
   font-display: swap;
 }
 
+html {
+ height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   color: #000000;
 }
 
 /* Хэдер */
 
-.navigation-link {
+.page-header {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.header-logo {
+ width: 139px;
+ margin-right: 30px;
+ margin-left: 40px;
+}
+
+.navigation {
+  display: flex;
+  width: 460px;
+}
+
+.navigation-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-item{
+  width: 115px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+}
+
+.navigation-link {
   text-decoration: none;
   color: #000000;
 }
@@ -53,7 +89,28 @@ body {
 border-bottom: 2px solid #756257;
 }
 
-.user-menu-link {
+.user-menu {
+  max-width:264px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.user-menu-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.user-menu-item:not(:last-of-type) {
+width: 42px;
+}
+
+.user-menu-item:last-of-type {
+  width: 160px;
+  margin-left: 20px;
+}
+
+.user-menu-button {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -61,16 +118,32 @@ border-bottom: 2px solid #756257;
   text-decoration: none;
   color:#000000;
   border: none;
+  width: 130px;
+  padding: 9px 15px;
 }
 
 /* Главная */
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .welcome {
-  background-color: #000000;
-  color: #ffffff;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .reasons-title {
@@ -88,6 +161,27 @@ border-bottom: 2px solid #756257;
   color: #333333;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.advantages-item {
+  width: 400px;
+}
+
+.advatages-img {
+  width: 800px;
+}
+
+.advatages-item-img {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -103,7 +197,6 @@ border-bottom: 2px solid #756257;
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
 }
 
 .advantage-main .advanteges-description {
@@ -116,12 +209,17 @@ color: #ffffff;
 
 }
 
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .search-uppercase {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .search-description {
@@ -148,10 +246,13 @@ color: #ffffff;
 }
 
 .distribution {
+  display: flex;
+  flex-direction: column;
   background-image: url(../images/distribution-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #000000;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -184,6 +285,34 @@ color: #ffffff;
 
 /* Футер */
 
+.page-footer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-media {
+  width: 107px;
+  margin-left: 72px;
+}
+
+.media-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media-item {
+  width: 18px;
+}
+
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -193,7 +322,23 @@ color: #ffffff;
   color: #000000
 }
 
+.footer-referal {
+  width: 115px;
+  margin-right: 72px;
+}
+
 /* Каталог */
+
+.inner-container {
+  flex-grow: 1;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 70px;
+}
 
 .catalog-header {
   background-image: url(../images/catalog-background.jpg);
@@ -204,6 +349,8 @@ color: #ffffff;
 }
 
 .catalog-title {
+  padding: 0;
+  margin: 0;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -221,8 +368,25 @@ line-height: 26px;
 font-weight: 700;
 }
 
+.catalog-form {
+  display: flex;
+}
+
+.catalog-form-group {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  margin-right: 17px;
+}
+
 .catalog-filter-item {
   line-height: 23px;
+}
+
+.filter-button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .catalog-button-accept {
@@ -241,7 +405,20 @@ font-weight: 700;
   background-color: transparent;
 }
 
+.catalog-container{
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 70px;
+}
+
+.sort {
+  display: flex;
+}
+
 .sort-title {
+  width: 338px;
+  margin-right: 190px;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -249,6 +426,7 @@ font-weight: 700;
 }
 
 .sort-control {
+  width: 287px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -256,16 +434,44 @@ font-weight: 700;
   border-radius: 4px;
 }
 
+.sort-visualisation {
+  width: 160px ;
+  margin-left: auto;
+}
+
 .button-light {
+  width: 48px;
   background-color: #ffffff;
   color: #000000;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
 }
 
+.catalog-products {
+  display: flex;
+  flex-direction: column;
+}
+
 .active {
   border:2px solid #000000;
   border-radius: 4px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.products-card {
+  width: 339px;
+}
+
+.product-card-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .product-card-title {
@@ -306,6 +512,22 @@ font-weight: 700;
   border-radius: 4px;
 }
 
+.pagination-container {
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  width: 55px;
+  margin-right: 8px;
+  text-align: center;
+}
+
 .pagination-button {
   background-color: #83B3D3;
   font-size: 20px;
@@ -320,9 +542,16 @@ font-weight: 700;
 }
 
 .pagination-number {
+  width: 160px;
   line-height: 23px;
   color: #333333;
   font-size: 18px;
+}
+
+.product-description {
+  margin-left: auto;
+  margin-right: 50px;
+  width: 175px;
 }
 
 .distribution-catalog {
