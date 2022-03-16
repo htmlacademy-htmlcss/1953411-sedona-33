@@ -170,5 +170,55 @@
         </section>
       </footer>
     </div>
+    <div class="modal-conteiner">
+      <div class="modal">
+        <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-label">
+            <span class="modal-description">Дата заезда:</span>
+            <input class="modal-input" type="text" placeholder="27 апреля 2020" name="date of observation" required>
+            <div class="input-additional input-error">Мы не можем отправить вас в прошлое.</div>
+          </label>
+          <label class="modal-label">
+            <span class="modal-description">Дата выезда:</span>
+            <input class="modal-input" type="text" placeholder="1 сентября 2021" name="date of departure" required>
+            <div class="input-additional input-approve">На эти даты есть свободные номера. Пока есть.</div>
+          </label>
+          <label class="modal-label">
+            <span class="modal-description">Взрослые:</span>
+            <div class="input-container">
+              <span class="input-button input-less">
+                <span class="visually-hidden">Уменьшить количество</span>
+              </span>
+              <input class="modal-input input-number" type="number" value="2" name="adults" required>
+              <span class="input-button input-more">
+                <span class="visually-hidden">Увеличить количество</span>
+              </span>
+            </div>
+          </label>
+          <label class="modal-label">
+            <span class="modal-description">Дети:</span>
+            <div class="kids-info-button">
+              <span class="kids-info-tooltip">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </div>
+            <div class="input-container">
+              <span class="input-button input-less">
+                <span class="visually-hidden">Уменьшить количество</span>
+              </span>
+              <input class="modal-input input-number" type="number" value="1" name="kids" required>
+              <span class="input-button input-more">
+                <span class="visually-hidden">Увеличить количество</span>
+              </span>
+            </div>
+          </label>
+          <button class="button modal-button">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
