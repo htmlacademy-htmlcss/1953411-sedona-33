@@ -1621,7 +1621,7 @@ body {
   content: "";
 }
 
-.popover-active {
+.kids-info-button:hover .kids-info-tooltip {
   display: block;
 }
 
