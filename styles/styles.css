@@ -61,7 +61,8 @@ img {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
 }
 
 /* Хэдер */
@@ -938,7 +939,8 @@ img {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1130,7 +1132,8 @@ img {
   background-image: url("../images/dropdown-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .sort-control:hover {
@@ -1478,7 +1481,8 @@ img {
   background-image: url("../images/dropdown-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .pagination-number:hover {
@@ -1822,7 +1826,8 @@ img {
 
 .input-number::-webkit-outer-spin-button,
 .input-number::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1870,6 +1875,6 @@ img {
 }
 
 input[type="number"] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
-
