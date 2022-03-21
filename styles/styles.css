@@ -86,7 +86,7 @@ img {
   display: flex;
   min-width: 345px;
   max-width: 600px;
-  margin-left: 239px;
+  margin-left: 224px;
   padding: 0 17px;
 }
 
@@ -108,8 +108,8 @@ img {
 
 .navigation-link {
   display: block;
-  margin-right: 34px;
-  padding: 20px 0 19px;
+  margin-right: 4px;
+  padding: 20px 15px 19px;
   text-decoration: none;
   color: #000000;
 }
@@ -118,18 +118,18 @@ img {
   margin-right: 0;
 }
 
-.navigation-link-curent::before {
+.navigation-link-current::before {
   position: absolute;
-  left: 0;
-  right: 34px;
+  left: 15px;
+  right: 19px;
   bottom: -1px;
   height: 2px;
   background-color: #756257;
   content: "";
 }
 
-.navigation-item:last-of-type .navigation-link-curent::before {
-  right: 0;
+.navigation-item:last-of-type .navigation-link-current::before {
+  right: 15px;
 }
 
 .navigation-link:hover {
@@ -141,7 +141,8 @@ img {
 }
 
 .navigation-link:focus {
-  color: revert;
+  box-shadow: inset 0 0 0 3px #68a2ca;
+  border-radius: 4px;
 }
 
 /* Меню */
@@ -381,8 +382,8 @@ img {
   background-image: url("../images/food.svg");
 }
 
-.suveniers {
-  background-image: url("../images/suveniers.svg");
+.souvenirs {
+  background-image: url("../images/souvenirs.svg");
 }
 
 .advantage-main .advanteges-description {
@@ -1461,7 +1462,7 @@ img {
   box-shadow: 0 0 0 3px #756257;
 }
 
-.pagination-curent {
+.pagination-current {
   background-color: #f2f2f2;
   color: #000000;
 }
