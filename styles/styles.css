@@ -141,6 +141,7 @@ img {
 }
 
 .navigation-link:focus {
+  color: #756257;
   box-shadow: inset 0 0 0 3px #68a2ca;
   border-radius: 4px;
 }
