@@ -946,10 +946,10 @@ img {
 }
 
 .range-label {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
-  min-width: 144px;
+  min-width: 143px;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -973,6 +973,7 @@ img {
 }
 
 .range-min {
+  width: 144px;
   padding: 12px 11px 8px 18px;
   border: 2px solid #ffffff;
   border-right: 1px solid #ffffff;
@@ -980,7 +981,7 @@ img {
 }
 
 .range-max {
-  min-width: 143px;
+  width: 143px;
   padding: 12px 15px 9px 15px;
   border: 2px solid #ffffff;
   border-left: 1px solid #ffffff;
@@ -1006,10 +1007,17 @@ img {
 }
 
 .range-amount {
+  position: absolute;
+  right: 16px;
+  top: 12px;
   min-width: 20px;
   padding: 0;
   margin: 0;
   line-height: 23px;
+}
+
+.range-label:first-child .range-amount {
+  right: 11px;
 }
 
 .range-scale {
